@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0a0c10" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7928CA" />
+      <stop offset="50%" stop-color="#FF0080" />
+      <stop offset="100%" stop-color="#00DFD8" />
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58A6FF" />
+      <stop offset="50%" stop-color="#BC8CFF" />
+      <stop offset="100%" stop-color="#39D353" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 38px; fill: url(#text-grad); }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 19px; fill: #8b949e; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #c9d1d9; }
+    .pill-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #58a6ff; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-grad)" stroke="#30363d" stroke-width="2" />
+
+  <!-- Background visual accents -->
+  <g opacity="0.15">
+    <circle cx="1000" cy="80" r="140" fill="#7928CA" />
+    <circle cx="150" cy="240" r="120" fill="#00DFD8" />
+    <path d="M 100,100 L 250,50 L 400,120 L 550,60 L 700,150 L 850,70 L 1050,130" stroke="#58a6ff" stroke-width="1.5" fill="none" stroke-dasharray="6,6" />
+    <path d="M 150,220 L 300,270 L 500,200 L 680,260 L 900,210 L 1100,250" stroke="#bc8cff" stroke-width="1.5" fill="none" stroke-dasharray="6,6" />
+  </g>
+
+  <!-- Decorative Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="6" rx="3" fill="url(#accent-grad)" />
+
+  <!-- Top Pill -->
+  <g transform="translate(60, 45)">
+    <rect width="210" height="32" rx="16" fill="#21262d" stroke="#30363d" stroke-width="1" />
+    <text x="15" y="21" class="pill-title">⚡ CURATED ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title &amp; Subtitle -->
+  <text x="60" y="130" class="title">Awesome Serverless Cloud Data Warehouse</text>
+  <text x="60" y="170" class="subtitle">A curated collection of top-tier Serverless, Analytical (OLAP) &amp; Data Lakehouse engines</text>
+
+  <!-- Feature Tag Pills -->
+  <g transform="translate(60, 210)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="160" height="36" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="16" y="23" class="badge-text">Cloud Managed</text>
+    
+    <!-- Pill 2 -->
+    <rect x="175" y="0" width="170" height="36" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="191" y="23" class="badge-text">Open-Source OLAP</text>
+    
+    <!-- Pill 3 -->
+    <rect x="360" y="0" width="165" height="36" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="376" y="23" class="badge-text">Pay-Per-Query</text>
+
+    <!-- Pill 4 -->
+    <rect x="540" y="0" width="160" height="36" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="556" y="23" class="badge-text">Star Ratings</text>
+  </g>
+</svg>
